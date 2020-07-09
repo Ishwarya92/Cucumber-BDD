@@ -19,10 +19,11 @@ public class loginStepDefinitions {
 	WebDriver driver;
 	@Given("^user login to the site$")
 	public void login() throws MalformedURLException{
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Desktop\\jars\\chromedriver.exe");
-	DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-	driver = new RemoteWebDriver(new URL("http://192.168.43.47:4444/wd/hub"),capabilities);
-		//driver=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Desktop\\jars\\chromedriver.exe");
+	//DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+	//driver = new RemoteWebDriver(new URL("http://192.168.43.47:4444/wd/hub"),capabilities);
+	
+	driver=new ChromeDriver();
 	driver.get("http://demo.automationtesting.in/Index.html");
 	driver.manage().window().maximize();
 	
