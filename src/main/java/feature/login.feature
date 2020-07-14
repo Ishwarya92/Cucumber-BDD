@@ -1,6 +1,7 @@
 Feature: Registration
 Scenario Outline: User registration scenario
 
+
 Given user login to the site
 Then click on the Skiplogin
 Then enter the firstname as "<FirstName>" and lastname as "<LastName>"
