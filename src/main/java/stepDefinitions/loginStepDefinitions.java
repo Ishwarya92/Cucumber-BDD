@@ -26,7 +26,6 @@ public class loginStepDefinitions {
 	driver=new ChromeDriver();
 	driver.get("http://demo.automationtesting.in/Index.html");
 	driver.manage().window().maximize();
-	
 	}
 	@Then("^click on the Skiplogin$")
 	public void SkipLogin(){
